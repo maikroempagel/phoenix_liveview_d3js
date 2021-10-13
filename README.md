@@ -1,4 +1,22 @@
-# D3Demo
+## Description
+
+This little project demonstrates how to interact with [D3.js](https://d3js.org/) from a Phoenix LiveView using [client hooks](https://hexdocs.pm/phoenix_live_view/js-interop.html#client-hooks).
+
+Currently a simple circle object is added to the LiveView dynamically. The color of the circle changes by periodically pushing a random color to the client.
+
+![](./images/animation.gif)
+
+More examples might be added in the future.
+
+## How the project was created:
+
+```sh
+mix phx.new phoenix_liveview_d3js --no-mailer --no-dashboard --no-ecto --live --module D3Demo
+
+cd phoenix_liveview_d3js/assets
+
+npm install d3 --save
+```
 
 To start your Phoenix server:
 
