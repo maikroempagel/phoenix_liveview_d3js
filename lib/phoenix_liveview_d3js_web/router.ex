@@ -16,8 +16,7 @@ defmodule D3DemoWeb.Router do
 
   scope "/", D3DemoWeb do
     pipe_through :browser
-
-    get "/", PageController, :index
+    live "/", DemoLive
   end
 
   # Other scopes may use custom stacks.
